@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dug4058wdk45n"]
+
+[ext_resource type="PackedScene" uid="uid://dpt0km3k0ipkd" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Bench_1.fbx" id="1_xtbyo"]
+
+[node name="Bench_1" instance=ExtResource("1_xtbyo")]

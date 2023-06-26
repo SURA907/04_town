@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://n824pgvndiig"]
+
+[ext_resource type="PackedScene" uid="uid://bxlv6k3jkdmue" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Well.fbx" id="1_oyqkm"]
+
+[node name="Well" instance=ExtResource("1_oyqkm")]

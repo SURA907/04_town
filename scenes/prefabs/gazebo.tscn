@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://b35di6nq7lnur"]
+
+[ext_resource type="PackedScene" uid="uid://bhx1xgny22yqs" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Gazebo.fbx" id="1_7dsux"]
+
+[node name="Gazebo" instance=ExtResource("1_7dsux")]

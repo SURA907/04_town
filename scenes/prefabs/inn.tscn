@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://doq5aq8nyjth0"]
+
+[ext_resource type="PackedScene" uid="uid://dk24bfab4et0n" path="res://arts/models/Medieval Village Pack - Dec 2020/Buildings/FBX/Inn.fbx" id="1_etfsk"]
+
+[node name="Inn" instance=ExtResource("1_etfsk")]

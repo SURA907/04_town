@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx3gddwhl264y"]
+
+[ext_resource type="PackedScene" uid="uid://cicq8wdf5djvo" path="res://arts/models/Medieval Village Pack - Dec 2020/Buildings/FBX/Bell_Tower.fbx" id="1_7wdb2"]
+
+[node name="Bell_Tower" instance=ExtResource("1_7wdb2")]

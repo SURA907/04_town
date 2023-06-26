@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3lsil3mny8ck"]
+
+[ext_resource type="PackedScene" uid="uid://b05fudjq68kuo" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/MarketStand_2.fbx" id="1_g785a"]
+
+[node name="MarketStand_2" instance=ExtResource("1_g785a")]

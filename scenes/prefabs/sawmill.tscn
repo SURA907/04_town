@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsby3wm5u4jip"]
+
+[ext_resource type="PackedScene" uid="uid://d4jy2xuiaufgp" path="res://arts/models/Medieval Village Pack - Dec 2020/Buildings/FBX/Sawmill.fbx" id="1_t4rf4"]
+
+[node name="Sawmill" instance=ExtResource("1_t4rf4")]

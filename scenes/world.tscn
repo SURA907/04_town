@@ -1,0 +1,364 @@
+[gd_scene load_steps=19 format=3 uid="uid://j6cdr40fmuqo"]
+
+[ext_resource type="PackedScene" uid="uid://sdpffh6ce13e" path="res://scenes/prefabs/path_straight.tscn" id="1_0wbc4"]
+[ext_resource type="PackedScene" uid="uid://4c32vheovp7g" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Path_Square.fbx" id="1_01lge"]
+[ext_resource type="PackedScene" uid="uid://cjbccm1c3iqd5" path="res://scenes/prefabs/path_square.tscn" id="1_gebda"]
+[ext_resource type="PackedScene" uid="uid://bsby3wm5u4jip" path="res://scenes/prefabs/sawmill.tscn" id="2_wujle"]
+[ext_resource type="PackedScene" uid="uid://cbcwmo1hn0vq" path="res://scenes/prefabs/mill.tscn" id="4_lmm20"]
+[ext_resource type="PackedScene" uid="uid://cx3gddwhl264y" path="res://scenes/prefabs/bell_tower.tscn" id="4_s6w53"]
+[ext_resource type="PackedScene" uid="uid://qdgkoj2urnxr" path="res://scenes/prefabs/blacksmith.tscn" id="4_s8663"]
+[ext_resource type="PackedScene" uid="uid://doq5aq8nyjth0" path="res://scenes/prefabs/inn.tscn" id="5_7bexq"]
+[ext_resource type="PackedScene" uid="uid://n824pgvndiig" path="res://scenes/prefabs/well.tscn" id="9_6e8or"]
+[ext_resource type="PackedScene" uid="uid://d28i17l2e3hcn" path="res://scenes/prefabs/bench_2.tscn" id="10_xvrma"]
+[ext_resource type="PackedScene" uid="uid://d3lsil3mny8ck" path="res://scenes/prefabs/market_stand_2.tscn" id="11_ov7ln"]
+[ext_resource type="PackedScene" uid="uid://gfbcgmu8x77c" path="res://scenes/prefabs/market_stand_1.tscn" id="12_xlnyx"]
+[ext_resource type="PackedScene" uid="uid://b35di6nq7lnur" path="res://scenes/prefabs/gazebo.tscn" id="13_8s7dh"]
+[ext_resource type="PackedScene" uid="uid://dug4058wdk45n" path="res://scenes/prefabs/bench_1.tscn" id="14_f3pgx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3g353"]
+albedo_color = Color(0.133333, 0.545098, 0.133333, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5ot34"]
+material = SubResource("StandardMaterial3D_3g353")
+size = Vector2(300, 300)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pldm8"]
+points = PackedVector3Array(-150, 0, -150, -150, 0, 150, 150, 0, -150, 150, 0, 150)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_km4nv"]
+
+[node name="World" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866252, -0.432672, 0.249803, 2.78059e-08, 0.5, 0.866026, -0.499607, -0.750196, 0.433126, 0, 7, 26)
+shadow_enabled = true
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("PlaneMesh_5ot34")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("ConvexPolygonShape3D_pldm8")
+
+[node name="Refer_man" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, 84)
+mesh = SubResource("CapsuleMesh_km4nv")
+
+[node name="Props" type="Node3D" parent="."]
+
+[node name="Way" type="Node3D" parent="Props"]
+
+[node name="Path_Square2" parent="Props/Way" instance=ExtResource("1_gebda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9, -0.1, 81)
+
+[node name="Path_Square" parent="Props/Way" instance=ExtResource("1_01lge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, -0.1, 81)
+
+[node name="Path_Straight3" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, -0.1, 78.4)
+
+[node name="Path_Straight77" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.2, -0.1, 80.9)
+
+[node name="Path_Straight78" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.5, -0.1, 80.9)
+
+[node name="Path_Straight79" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.8, -0.1, 80.9)
+
+[node name="Path_Straight80" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.5, -0.1, 80.9)
+
+[node name="Path_Straight81" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -17.8, -0.1, 80.9)
+
+[node name="Path_Straight82" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.1, -0.1, 80.9)
+
+[node name="Path_Straight83" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -24.4, -0.1, 80.9)
+
+[node name="Path_Straight84" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -26.9, -0.1, 75.1)
+
+[node name="Path_Straight86" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -26.9, -0.1, 71.8)
+
+[node name="Path_Straight87" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -26.9, -0.1, 68.5)
+
+[node name="Path_Straight85" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -26.9, -0.1, 78.4)
+
+[node name="Path_Straight4" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, -0.1, 75.1)
+
+[node name="Path_Straight5" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 86.4)
+
+[node name="Path_Straight6" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 86.4)
+
+[node name="Path_Straight7" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 83.1)
+
+[node name="Path_Straight8" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 83.1)
+
+[node name="Path_Straight9" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 79.8)
+
+[node name="Path_Straight10" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 79.8)
+
+[node name="Path_Straight11" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 76.5)
+
+[node name="Path_Straight12" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 76.5)
+
+[node name="Path_Straight13" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 73.2)
+
+[node name="Path_Straight14" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 73.2)
+
+[node name="Path_Straight15" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 69.9)
+
+[node name="Path_Straight16" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 69.9)
+
+[node name="Path_Straight17" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 66.6)
+
+[node name="Path_Straight18" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 66.6)
+
+[node name="Path_Straight19" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 63.3)
+
+[node name="Path_Straight20" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 63.3)
+
+[node name="Path_Straight21" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 60)
+
+[node name="Path_Straight22" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 60)
+
+[node name="Path_Straight23" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 56.7)
+
+[node name="Path_Straight24" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 56.7)
+
+[node name="Path_Straight25" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 53.4)
+
+[node name="Path_Straight26" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 53.4)
+
+[node name="Path_Straight27" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 50.1)
+
+[node name="Path_Straight28" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 50.1)
+
+[node name="Path_Straight29" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 46.8)
+
+[node name="Path_Straight30" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 46.8)
+
+[node name="Path_Straight31" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 43.5)
+
+[node name="Path_Straight32" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 43.5)
+
+[node name="Path_Straight33" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 40.2)
+
+[node name="Path_Straight34" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 40.2)
+
+[node name="Path_Straight35" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 36.9)
+
+[node name="Path_Straight36" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 36.9)
+
+[node name="Path_Straight37" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 33.6)
+
+[node name="Path_Straight38" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 33.6)
+
+[node name="Path_Straight39" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 30.3)
+
+[node name="Path_Straight40" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 30.3)
+
+[node name="Path_Straight41" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 27)
+
+[node name="Path_Straight42" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 27)
+
+[node name="Path_Straight43" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 23.7)
+
+[node name="Path_Straight44" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 23.7)
+
+[node name="Path_Straight45" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 20.4)
+
+[node name="Path_Straight46" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 20.4)
+
+[node name="Path_Straight47" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 17.1)
+
+[node name="Path_Straight48" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 17.1)
+
+[node name="Path_Straight49" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 13.8)
+
+[node name="Path_Straight50" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 13.8)
+
+[node name="Path_Straight51" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 10.5)
+
+[node name="Path_Straight52" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 10.5)
+
+[node name="Path_Straight53" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 7.19998)
+
+[node name="Path_Straight54" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 7.19998)
+
+[node name="Path_Straight55" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 3.89997)
+
+[node name="Path_Straight56" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 3.89997)
+
+[node name="Path_Straight57" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 0.599979)
+
+[node name="Path_Straight58" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, 0.599979)
+
+[node name="Path_Straight59" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -2.70002)
+
+[node name="Path_Straight60" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -2.70002)
+
+[node name="Path_Straight61" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -6.00002)
+
+[node name="Path_Straight62" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -6.00002)
+
+[node name="Path_Straight63" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -9.30002)
+
+[node name="Path_Straight64" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -9.30002)
+
+[node name="Path_Straight65" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -12.6)
+
+[node name="Path_Straight66" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -12.6)
+
+[node name="Path_Straight67" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -15.9)
+
+[node name="Path_Straight68" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -15.9)
+
+[node name="Path_Straight69" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -19.2)
+
+[node name="Path_Straight70" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -19.2)
+
+[node name="Path_Straight71" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -22.5)
+
+[node name="Path_Straight72" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -22.5)
+
+[node name="Path_Straight73" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -25.8)
+
+[node name="Path_Straight74" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -25.8)
+
+[node name="Path_Straight75" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -29.1)
+
+[node name="Path_Straight76" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -29.1)
+
+[node name="Path_Straight" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.79011, -0.1, 49.0143)
+
+[node name="Path_Straight2" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.49011, -0.1, 49.0143)
+
+[node name="Path_Straight88" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.19011, -0.1, 49.0143)
+
+[node name="Path_Straight89" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.10989, -0.1, 49.0143)
+
+[node name="Path_Straight90" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90989, -0.1, 46.5143)
+
+[node name="Well" parent="Props" instance=ExtResource("9_6e8or")]
+transform = Transform3D(2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, -26, 0.8, 22)
+
+[node name="Bench_2" parent="Props" instance=ExtResource("10_xvrma")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -24, 0, 22)
+
+[node name="MarketStand_2" parent="Props" instance=ExtResource("11_ov7ln")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -34, 0, 19.3)
+
+[node name="MarketStand_1" parent="Props" instance=ExtResource("12_xlnyx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -29.9063, 0, 14.7243)
+
+[node name="MarketStand_3" parent="Props" instance=ExtResource("12_xlnyx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28.9063, 0, 33.7243)
+
+[node name="Gazebo" parent="Props" instance=ExtResource("13_8s7dh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0, 27)
+
+[node name="Bench_1" parent="Props" instance=ExtResource("14_f3pgx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -34.4, 0, 27)
+
+[node name="Buildings" type="Node3D" parent="."]
+
+[node name="Mill" parent="Buildings" instance=ExtResource("4_lmm20")]
+transform = Transform3D(1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, 1, -26, 0, 0)
+
+[node name="Bell_Tower" parent="Buildings" instance=ExtResource("4_s6w53")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, 16)
+
+[node name="Blacksmith" parent="Buildings" instance=ExtResource("4_s8663")]
+transform = Transform3D(0.924679, 0.380748, 0, -0.380748, 0.924679, 0, 0, 0, 1, 5.14308, 0, 40.9011)
+
+[node name="Inn" parent="Buildings" instance=ExtResource("5_7bexq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9, 0, 61.8)
+
+[node name="Sawmill" parent="Buildings" instance=ExtResource("2_wujle")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 0, 69.6)
