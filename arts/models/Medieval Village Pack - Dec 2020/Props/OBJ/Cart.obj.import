@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bqnevd8t84jnc"
+path="res://.godot/imported/Cart.obj-cd2d11d3d84faa76b9f3932288d36f5d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cart.obj-cd2d11d3d84faa76b9f3932288d36f5d.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Cart.obj"
+dest_files=["res://.godot/imported/Cart.obj-cd2d11d3d84faa76b9f3932288d36f5d.mesh", "res://.godot/imported/Cart.obj-cd2d11d3d84faa76b9f3932288d36f5d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

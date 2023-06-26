@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dbsjp0wvtoqfd"
+path="res://.godot/imported/Bell_Tower.obj-e06f3d2a65fa12c3130dd86d356c2f2b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Bell_Tower.obj-e06f3d2a65fa12c3130dd86d356c2f2b.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Buildings/OBJ/Bell_Tower.obj"
+dest_files=["res://.godot/imported/Bell_Tower.obj-e06f3d2a65fa12c3130dd86d356c2f2b.mesh", "res://.godot/imported/Bell_Tower.obj-e06f3d2a65fa12c3130dd86d356c2f2b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

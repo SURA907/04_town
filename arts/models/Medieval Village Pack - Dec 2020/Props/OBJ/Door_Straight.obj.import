@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://qnquu8bd56lc"
+path="res://.godot/imported/Door_Straight.obj-7a46b1d9fa289478146e0cd5a8b97deb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Door_Straight.obj-7a46b1d9fa289478146e0cd5a8b97deb.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Door_Straight.obj"
+dest_files=["res://.godot/imported/Door_Straight.obj-7a46b1d9fa289478146e0cd5a8b97deb.mesh", "res://.godot/imported/Door_Straight.obj-7a46b1d9fa289478146e0cd5a8b97deb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://isqxlxjr4085"
+path="res://.godot/imported/Well.obj-adcbf36d243527db2f08e8a84c4fac53.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Well.obj-adcbf36d243527db2f08e8a84c4fac53.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Well.obj"
+dest_files=["res://.godot/imported/Well.obj-adcbf36d243527db2f08e8a84c4fac53.mesh", "res://.godot/imported/Well.obj-adcbf36d243527db2f08e8a84c4fac53.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

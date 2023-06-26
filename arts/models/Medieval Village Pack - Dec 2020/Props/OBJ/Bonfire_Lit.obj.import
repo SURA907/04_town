@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dq3s0fu1s5qen"
+path="res://.godot/imported/Bonfire_Lit.obj-9fa97274e265ac5c45d7c25609f77bf9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Bonfire_Lit.obj-9fa97274e265ac5c45d7c25609f77bf9.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Bonfire_Lit.obj"
+dest_files=["res://.godot/imported/Bonfire_Lit.obj-9fa97274e265ac5c45d7c25609f77bf9.mesh", "res://.godot/imported/Bonfire_Lit.obj-9fa97274e265ac5c45d7c25609f77bf9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

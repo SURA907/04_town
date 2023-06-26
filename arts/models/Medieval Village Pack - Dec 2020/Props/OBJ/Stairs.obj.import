@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq7n1jskxx2g4"
+path="res://.godot/imported/Stairs.obj-1f71f9034caea76e69ad97281188e6f1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stairs.obj-1f71f9034caea76e69ad97281188e6f1.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Stairs.obj"
+dest_files=["res://.godot/imported/Stairs.obj-1f71f9034caea76e69ad97281188e6f1.mesh", "res://.godot/imported/Stairs.obj-1f71f9034caea76e69ad97281188e6f1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

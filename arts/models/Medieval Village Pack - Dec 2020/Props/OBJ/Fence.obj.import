@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://rrj5xtndghnk"
+path="res://.godot/imported/Fence.obj-0f4bc4d766816bcb9c884fc75d651bc4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Fence.obj-0f4bc4d766816bcb9c884fc75d651bc4.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Fence.obj"
+dest_files=["res://.godot/imported/Fence.obj-0f4bc4d766816bcb9c884fc75d651bc4.mesh", "res://.godot/imported/Fence.obj-0f4bc4d766816bcb9c884fc75d651bc4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

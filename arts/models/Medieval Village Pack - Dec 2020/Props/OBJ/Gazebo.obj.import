@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwy0pgejk5sg"
+path="res://.godot/imported/Gazebo.obj-eab542f8bbb51b44f04c40bd748950b0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Gazebo.obj-eab542f8bbb51b44f04c40bd748950b0.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Gazebo.obj"
+dest_files=["res://.godot/imported/Gazebo.obj-eab542f8bbb51b44f04c40bd748950b0.mesh", "res://.godot/imported/Gazebo.obj-eab542f8bbb51b44f04c40bd748950b0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

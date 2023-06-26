@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://defvpu3xopjj3"
+path="res://.godot/imported/Hay.obj-909e756d663560ecc93f9fc312d1bb21.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hay.obj-909e756d663560ecc93f9fc312d1bb21.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Hay.obj"
+dest_files=["res://.godot/imported/Hay.obj-909e756d663560ecc93f9fc312d1bb21.mesh", "res://.godot/imported/Hay.obj-909e756d663560ecc93f9fc312d1bb21.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

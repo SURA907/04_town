@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cn7w53nyhyho0"
+path="res://.godot/imported/Blacksmith.obj-d09d487b5691ebfaa9b23f5cf3dca947.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Blacksmith.obj-d09d487b5691ebfaa9b23f5cf3dca947.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Buildings/OBJ/Blacksmith.obj"
+dest_files=["res://.godot/imported/Blacksmith.obj-d09d487b5691ebfaa9b23f5cf3dca947.mesh", "res://.godot/imported/Blacksmith.obj-d09d487b5691ebfaa9b23f5cf3dca947.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

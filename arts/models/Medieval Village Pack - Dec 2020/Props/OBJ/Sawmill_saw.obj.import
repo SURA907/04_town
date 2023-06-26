@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgm080kidxa6f"
+path="res://.godot/imported/Sawmill_saw.obj-8501aa0e34ddeb59f2cd01d8495c2fa7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Sawmill_saw.obj-8501aa0e34ddeb59f2cd01d8495c2fa7.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Sawmill_saw.obj"
+dest_files=["res://.godot/imported/Sawmill_saw.obj-8501aa0e34ddeb59f2cd01d8495c2fa7.mesh", "res://.godot/imported/Sawmill_saw.obj-8501aa0e34ddeb59f2cd01d8495c2fa7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

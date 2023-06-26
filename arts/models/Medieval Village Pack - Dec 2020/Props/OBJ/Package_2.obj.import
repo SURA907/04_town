@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://yq8vka217s05"
+path="res://.godot/imported/Package_2.obj-435bffca71330d4d6307b627df3443cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Package_2.obj-435bffca71330d4d6307b627df3443cb.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Package_2.obj"
+dest_files=["res://.godot/imported/Package_2.obj-435bffca71330d4d6307b627df3443cb.mesh", "res://.godot/imported/Package_2.obj-435bffca71330d4d6307b627df3443cb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

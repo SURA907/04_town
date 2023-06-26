@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cpqrgq4ifcsih"
+path="res://.godot/imported/MarketStand_1.obj-f6dff9ec25d12162f9c3a8f962955a38.mesh"
+
+[deps]
+
+files=["res://.godot/imported/MarketStand_1.obj-f6dff9ec25d12162f9c3a8f962955a38.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/MarketStand_1.obj"
+dest_files=["res://.godot/imported/MarketStand_1.obj-f6dff9ec25d12162f9c3a8f962955a38.mesh", "res://.godot/imported/MarketStand_1.obj-f6dff9ec25d12162f9c3a8f962955a38.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

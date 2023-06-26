@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cgisxyjt6o0r4"
+path="res://.godot/imported/Bell.obj-b76583b97da9b20ceccf0b5d1d8731af.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Bell.obj-b76583b97da9b20ceccf0b5d1d8731af.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Bell.obj"
+dest_files=["res://.godot/imported/Bell.obj-b76583b97da9b20ceccf0b5d1d8731af.mesh", "res://.godot/imported/Bell.obj-b76583b97da9b20ceccf0b5d1d8731af.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

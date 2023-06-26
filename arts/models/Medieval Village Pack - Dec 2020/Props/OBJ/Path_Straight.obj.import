@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dld18rdeuw8h4"
+path="res://.godot/imported/Path_Straight.obj-b54fdce7c5455ec0563059a582c62cfd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Path_Straight.obj-b54fdce7c5455ec0563059a582c62cfd.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Path_Straight.obj"
+dest_files=["res://.godot/imported/Path_Straight.obj-b54fdce7c5455ec0563059a582c62cfd.mesh", "res://.godot/imported/Path_Straight.obj-b54fdce7c5455ec0563059a582c62cfd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

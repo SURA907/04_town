@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ct2p6pc6c5l81"
+path="res://.godot/imported/Bag_Open.obj-448c1ca4e3267186edf2fe9cdcaba8b9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Bag_Open.obj-448c1ca4e3267186edf2fe9cdcaba8b9.mesh"]
+
+source_file="res://arts/models/Medieval Village Pack - Dec 2020/Props/OBJ/Bag_Open.obj"
+dest_files=["res://.godot/imported/Bag_Open.obj-448c1ca4e3267186edf2fe9cdcaba8b9.mesh", "res://.godot/imported/Bag_Open.obj-448c1ca4e3267186edf2fe9cdcaba8b9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
