@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1jgmg4ebhykn"]
+
+[ext_resource type="PackedScene" uid="uid://dgdxf1fvlx3wf" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Cart.fbx" id="1_a5t20"]
+
+[node name="Cart" instance=ExtResource("1_a5t20")]

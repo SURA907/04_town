@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://j6cdr40fmuqo"]
+[gd_scene load_steps=28 format=3 uid="uid://j6cdr40fmuqo"]
 
 [ext_resource type="PackedScene" uid="uid://sdpffh6ce13e" path="res://scenes/prefabs/path_straight.tscn" id="1_0wbc4"]
 [ext_resource type="PackedScene" uid="uid://4c32vheovp7g" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Path_Square.fbx" id="1_01lge"]
@@ -11,9 +11,18 @@
 [ext_resource type="PackedScene" uid="uid://n824pgvndiig" path="res://scenes/prefabs/well.tscn" id="9_6e8or"]
 [ext_resource type="PackedScene" uid="uid://d28i17l2e3hcn" path="res://scenes/prefabs/bench_2.tscn" id="10_xvrma"]
 [ext_resource type="PackedScene" uid="uid://d3lsil3mny8ck" path="res://scenes/prefabs/market_stand_2.tscn" id="11_ov7ln"]
+[ext_resource type="PackedScene" uid="uid://duwtpd2snxyfe" path="res://scenes/prefabs/cauldron.tscn" id="12_8aain"]
 [ext_resource type="PackedScene" uid="uid://gfbcgmu8x77c" path="res://scenes/prefabs/market_stand_1.tscn" id="12_xlnyx"]
 [ext_resource type="PackedScene" uid="uid://b35di6nq7lnur" path="res://scenes/prefabs/gazebo.tscn" id="13_8s7dh"]
 [ext_resource type="PackedScene" uid="uid://dug4058wdk45n" path="res://scenes/prefabs/bench_1.tscn" id="14_f3pgx"]
+[ext_resource type="PackedScene" uid="uid://d1jgmg4ebhykn" path="res://scenes/prefabs/cart.tscn" id="15_wale2"]
+[ext_resource type="PackedScene" uid="uid://bjho6nexe1uqb" path="res://scenes/prefabs/package_1.tscn" id="16_01awr"]
+[ext_resource type="PackedScene" uid="uid://cxl25q7mk7dmv" path="res://scenes/prefabs/bags.tscn" id="18_ol7g6"]
+[ext_resource type="PackedScene" uid="uid://ct5qt1ofoc5x7" path="res://scenes/prefabs/rock_2.tscn" id="19_n0emt"]
+[ext_resource type="PackedScene" uid="uid://dwjkdl0sueag3" path="res://scenes/prefabs/rock_1.tscn" id="20_6meea"]
+[ext_resource type="PackedScene" uid="uid://djowf6w85ix3n" path="res://scenes/prefabs/package_2.tscn" id="21_3kct2"]
+[ext_resource type="PackedScene" uid="uid://cgj2wa50qiukw" path="res://scenes/prefabs/hay.tscn" id="22_vvxaq"]
+[ext_resource type="PackedScene" uid="uid://n4ew6li6ce78" path="res://scenes/prefabs/crate.tscn" id="23_r36ox"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3g353"]
 albedo_color = Color(0.133333, 0.545098, 0.133333, 1)
@@ -329,7 +338,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90989, -0.1, 46.5143)
 transform = Transform3D(2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, -26, 0.8, 22)
 
 [node name="Bench_2" parent="Props" instance=ExtResource("10_xvrma")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -24, 0, 22)
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -26.2, 0, 24.3)
 
 [node name="MarketStand_2" parent="Props" instance=ExtResource("11_ov7ln")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -34, 0, 19.3)
@@ -345,6 +354,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0, 27)
 
 [node name="Bench_1" parent="Props" instance=ExtResource("14_f3pgx")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -34.4, 0, 27)
+
+[node name="Cart" parent="Props" instance=ExtResource("15_wale2")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -22.8, 0, 18.4)
+
+[node name="Package_1" parent="Props" instance=ExtResource("16_01awr")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -34.2722, 2.38419e-07, 29.5157)
+
+[node name="Cauldron" parent="Props" instance=ExtResource("12_8aain")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.7, 0, 30)
+
+[node name="Bags" parent="Props" instance=ExtResource("18_ol7g6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.3, 0, 30)
+
+[node name="Rock_2" parent="Props" instance=ExtResource("19_n0emt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 29)
 
 [node name="Buildings" type="Node3D" parent="."]
 
@@ -362,3 +386,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9, 0, 61.8)
 
 [node name="Sawmill" parent="Buildings" instance=ExtResource("2_wujle")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 0, 69.6)
+
+[node name="Rock_1" parent="." instance=ExtResource("20_6meea")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8855, -2.38419e-07, 30.877)
+
+[node name="Package_2" parent="." instance=ExtResource("21_3kct2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.7, 0, 16)
+
+[node name="Hay" parent="." instance=ExtResource("22_vvxaq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.6, 0, 15.4)
+
+[node name="Crate" parent="." instance=ExtResource("23_r36ox")]
+transform = Transform3D(0.939693, 0, -0.34202, 0, 1, 0, 0.34202, 0, 0.939693, -33.7, 0, 22)

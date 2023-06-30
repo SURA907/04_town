@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://duwtpd2snxyfe"]
+
+[ext_resource type="PackedScene" uid="uid://c6u14erl8dsv" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Cauldron.fbx" id="1_vx553"]
+
+[node name="Cauldron" instance=ExtResource("1_vx553")]

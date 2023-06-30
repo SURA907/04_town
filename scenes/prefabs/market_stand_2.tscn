@@ -1,5 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3lsil3mny8ck"]
+[gd_scene load_steps=3 format=3 uid="uid://d3lsil3mny8ck"]
 
 [ext_resource type="PackedScene" uid="uid://b05fudjq68kuo" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/MarketStand_2.fbx" id="1_g785a"]
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7n8c5"]
+points = PackedVector3Array(0.00659171, 0.0184503, 0.0353353, 0.00733699, 0.0101951, 0.0342046, 0.00733527, 0.0184503, 0.0342046, 0.0068017, 0.019622, 0.034711, 0.00503574, 0.019622, 0.034711, -0.00931224, 0.0184503, 0.0295604, 0.00659171, -0.0186924, 0.0353353, 0.00723888, 0.0163875, 0.00379372, 0.00733699, -0.00631146, 0.0342046, 0.00723888, 0.0184503, 0.00511171, 0.0068017, 0.019622, -9.78147e-05, -0.0053724, 0.019622, 0.030313, -0.00961345, 0.0195605, 0.0290505, -0.0102469, 0.0184503, 0.0289187, -0.00931224, -0.0186924, 0.0295604, 0.00503574, -0.019622, 0.034711, 0.0068017, -0.019622, 0.034711, 0.00733527, -0.0186924, 0.0342046, 0.00723888, -0.0166295, 0.00379372, -0.0053724, 0.019622, -9.78147e-05, 0.0068017, -0.019622, -9.78147e-05, -0.0094878, 0.0195029, -3.19153e-05, -0.0102469, -0.0186924, 0.0289187, -0.00961345, -0.0195644, 0.0290505, -0.0053724, -0.019622, 0.030313, 0.00723888, -0.0186924, 0.00511171, -0.0053724, -0.019622, -9.78147e-05, -0.0094878, -0.0195067, -3.19153e-05)
+
 [node name="MarketStand_2" instance=ExtResource("1_g785a")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/MarketStand_2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/MarketStand_2/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_7n8c5")

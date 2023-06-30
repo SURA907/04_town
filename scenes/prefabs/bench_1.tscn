@@ -1,5 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://dug4058wdk45n"]
+[gd_scene load_steps=3 format=3 uid="uid://dug4058wdk45n"]
 
 [ext_resource type="PackedScene" uid="uid://dpt0km3k0ipkd" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Bench_1.fbx" id="1_xtbyo"]
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_l7tkr"]
+points = PackedVector3Array(0.0114794, -0.00460233, 0.0109413, -0.0114794, -0.00496134, -0.000179365, -0.0114794, 0.00221214, -0.000179365, 0.0114794, -0.00496134, -0.000179365, -0.0114794, -0.00567937, 0.0109413, 0.0114794, 0.00293016, 0.00735232, -0.0114794, 0.00293016, 0.00735232, 0.0114794, 0.00221214, -0.000179365, 0.0114794, -0.00567937, 0.0098636, -0.0114794, -0.00460233, 0.0109413, 0.0114794, 0.00293016, 0.00627683, 0.0114794, -0.00567937, 0.0109413, -0.0114794, -0.00567937, 0.0098636, -0.0114794, 0.00293016, 0.00627683)
+
 [node name="Bench_1" instance=ExtResource("1_xtbyo")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode" index="1"]
+transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_l7tkr")
