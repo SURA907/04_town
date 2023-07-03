@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://j6cdr40fmuqo"]
+[gd_scene load_steps=29 format=3 uid="uid://j6cdr40fmuqo"]
 
 [ext_resource type="PackedScene" uid="uid://sdpffh6ce13e" path="res://scenes/prefabs/path_straight.tscn" id="1_0wbc4"]
 [ext_resource type="PackedScene" uid="uid://4c32vheovp7g" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Path_Square.fbx" id="1_01lge"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://djowf6w85ix3n" path="res://scenes/prefabs/package_2.tscn" id="21_3kct2"]
 [ext_resource type="PackedScene" uid="uid://cgj2wa50qiukw" path="res://scenes/prefabs/hay.tscn" id="22_vvxaq"]
 [ext_resource type="PackedScene" uid="uid://n4ew6li6ce78" path="res://scenes/prefabs/crate.tscn" id="23_r36ox"]
+[ext_resource type="PackedScene" uid="uid://clny843mu12yb" path="res://scenes/prefabs/stable.tscn" id="24_1dtp8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3g353"]
 albedo_color = Color(0.133333, 0.545098, 0.133333, 1)
@@ -307,6 +308,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -22.5)
 [node name="Path_Straight72" parent="Props/Way" instance=ExtResource("1_0wbc4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -22.5)
 
+[node name="Path_Straight91" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.8, -0.1, -22.5)
+
+[node name="Path_Straight92" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.5, -0.1, -22.5)
+
+[node name="Path_Straight93" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.2, -0.1, -22.5)
+
+[node name="Path_Straight94" parent="Props/Way" instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.1, -0.1, -22.5)
+
 [node name="Path_Straight73" parent="Props/Way" instance=ExtResource("1_0wbc4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -25.8)
 
@@ -398,3 +411,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.6, 0, 15.4)
 
 [node name="Crate" parent="." instance=ExtResource("23_r36ox")]
 transform = Transform3D(0.939693, 0, -0.34202, 0, 1, 0, 0.34202, 0, 0.939693, -33.7, 0, 22)
+
+[node name="Stable" parent="." instance=ExtResource("24_1dtp8")]
+transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, -10.6207, 0, -43.0849)
