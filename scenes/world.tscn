@@ -1,8 +1,6 @@
-[gd_scene load_steps=29 format=3 uid="uid://j6cdr40fmuqo"]
+[gd_scene load_steps=27 format=3 uid="uid://j6cdr40fmuqo"]
 
 [ext_resource type="PackedScene" uid="uid://sdpffh6ce13e" path="res://scenes/prefabs/path_straight.tscn" id="1_0wbc4"]
-[ext_resource type="PackedScene" uid="uid://4c32vheovp7g" path="res://arts/models/Medieval Village Pack - Dec 2020/Props/FBX/Path_Square.fbx" id="1_01lge"]
-[ext_resource type="PackedScene" uid="uid://cjbccm1c3iqd5" path="res://scenes/prefabs/path_square.tscn" id="1_gebda"]
 [ext_resource type="PackedScene" uid="uid://bsby3wm5u4jip" path="res://scenes/prefabs/sawmill.tscn" id="2_wujle"]
 [ext_resource type="PackedScene" uid="uid://cbcwmo1hn0vq" path="res://scenes/prefabs/mill.tscn" id="4_lmm20"]
 [ext_resource type="PackedScene" uid="uid://cx3gddwhl264y" path="res://scenes/prefabs/bell_tower.tscn" id="4_s6w53"]
@@ -25,6 +23,8 @@
 [ext_resource type="PackedScene" uid="uid://n4ew6li6ce78" path="res://scenes/prefabs/crate.tscn" id="23_r36ox"]
 [ext_resource type="PackedScene" uid="uid://clny843mu12yb" path="res://scenes/prefabs/stable.tscn" id="24_1dtp8"]
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_km4nv"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3g353"]
 albedo_color = Color(0.133333, 0.545098, 0.133333, 1)
 
@@ -35,74 +35,22 @@ size = Vector2(300, 300)
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pldm8"]
 points = PackedVector3Array(-150, 0, -150, -150, 0, 150, 150, 0, -150, 150, 0, 150)
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_km4nv"]
-
 [node name="World" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.866252, -0.432672, 0.249803, 2.78059e-08, 0.5, 0.866026, -0.499607, -0.750196, 0.433126, 0, 7, 26)
 shadow_enabled = true
 
-[node name="Floor" type="StaticBody3D" parent="."]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
-mesh = SubResource("PlaneMesh_5ot34")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
-shape = SubResource("ConvexPolygonShape3D_pldm8")
-
 [node name="Refer_man" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, 84)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 1, 84)
 mesh = SubResource("CapsuleMesh_km4nv")
 
 [node name="Props" type="Node3D" parent="."]
 
 [node name="Way" type="Node3D" parent="Props"]
 
-[node name="Path_Square2" parent="Props/Way" instance=ExtResource("1_gebda")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9, -0.1, 81)
-
-[node name="Path_Square" parent="Props/Way" instance=ExtResource("1_01lge")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, -0.1, 81)
-
-[node name="Path_Straight3" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, -0.1, 78.4)
-
-[node name="Path_Straight77" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.2, -0.1, 80.9)
-
-[node name="Path_Straight78" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.5, -0.1, 80.9)
-
 [node name="Path_Straight79" parent="Props/Way" instance=ExtResource("1_0wbc4")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.8, -0.1, 80.9)
-
-[node name="Path_Straight80" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.5, -0.1, 80.9)
-
-[node name="Path_Straight81" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -17.8, -0.1, 80.9)
-
-[node name="Path_Straight82" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.1, -0.1, 80.9)
-
-[node name="Path_Straight83" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -24.4, -0.1, 80.9)
-
-[node name="Path_Straight84" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -26.9, -0.1, 75.1)
-
-[node name="Path_Straight86" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -26.9, -0.1, 71.8)
-
-[node name="Path_Straight87" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -26.9, -0.1, 68.5)
-
-[node name="Path_Straight85" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -26.9, -0.1, 78.4)
-
-[node name="Path_Straight4" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, -0.1, 75.1)
 
 [node name="Path_Straight5" parent="Props/Way" instance=ExtResource("1_0wbc4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, 86.4)
@@ -333,19 +281,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -0.1, -29.1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, -0.1, -29.1)
 
 [node name="Path_Straight" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.79011, -0.1, 49.0143)
-
-[node name="Path_Straight2" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.49011, -0.1, 49.0143)
-
-[node name="Path_Straight88" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.19011, -0.1, 49.0143)
-
-[node name="Path_Straight89" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.10989, -0.1, 49.0143)
-
-[node name="Path_Straight90" parent="Props/Way" instance=ExtResource("1_0wbc4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90989, -0.1, 46.5143)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.5504, -0.1, 73.7532)
 
 [node name="Well" parent="Props" instance=ExtResource("9_6e8or")]
 transform = Transform3D(2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, -26, 0.8, 22)
@@ -389,16 +325,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 29)
 transform = Transform3D(1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, 1, -26, 0, 0)
 
 [node name="Bell_Tower" parent="Buildings" instance=ExtResource("4_s6w53")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, 16)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21, 0, 51)
 
 [node name="Blacksmith" parent="Buildings" instance=ExtResource("4_s8663")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.14308, 0, 40.9011)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.34308, 0, 63.9011)
 
 [node name="Inn" parent="Buildings" instance=ExtResource("5_7bexq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9, 0, 61.8)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -21.2, 0, 73.7)
 
 [node name="Sawmill" parent="Buildings" instance=ExtResource("2_wujle")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 0, 69.6)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.3, 0, 83.2)
 
 [node name="Rock_1" parent="." instance=ExtResource("20_6meea")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8855, -2.38419e-07, 30.877)
@@ -414,3 +350,23 @@ transform = Transform3D(0.939693, 0, -0.34202, 0, 1, 0, 0.34202, 0, 0.939693, -3
 
 [node name="Stable" parent="." instance=ExtResource("24_1dtp8")]
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, -10.6207, 0, -43.0849)
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("PlaneMesh_5ot34")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("ConvexPolygonShape3D_pldm8")
+
+[node name="Path_Straight" parent="." instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.7771, -0.1, 73.6758)
+
+[node name="Path_Straight2" parent="." instance=ExtResource("1_0wbc4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.4771, -0.1, 73.6758)
+
+[node name="Path_Straight3" parent="." instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9771, -0.1, 72.8758)
+
+[node name="Path_Straight4" parent="." instance=ExtResource("1_0wbc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9771, -0.1, 69.5758)
